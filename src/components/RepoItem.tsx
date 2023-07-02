@@ -1,4 +1,3 @@
-import React from "react";
 import { IRepoItem } from "../utils/types";
 import { View, Text } from "react-native"
 

@@ -1,4 +1,3 @@
-import React from "react"
 import { FlatList, View, StyleSheet} from "react-native"
 import { repositories } from "../utils/data"
 import RepoItem from "./RepoItem";
