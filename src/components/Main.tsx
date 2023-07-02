@@ -1,10 +1,11 @@
 import React from "react";
 import { SafeAreaView, StyleSheet, Text } from "react-native"
+import RepoList from "./RepoList";
 
 const Main = () => {
     return (
         <SafeAreaView style={styles.container}>
-            <Text>Hello World</Text>
+            <RepoList />
         </SafeAreaView>
     )
 }
