@@ -9,3 +9,13 @@ export interface IRepository {
     reviewCount: number;
     ownerAvatarUrl: string;
 }
+
+export interface IRepoItem {
+    fullName: string;
+    description: string;
+    language: string;
+    stargazersCount: number;
+    forksCount: number;
+    reviewCount: number;
+    ratingAverage: number;
+}
