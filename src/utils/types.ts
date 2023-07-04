@@ -11,6 +11,7 @@ export interface IRepository {
 }
 
 export interface IRepoItem {
+    id?: string;
     fullName: string;
     description: string;
     language: string;
@@ -18,4 +19,5 @@ export interface IRepoItem {
     forksCount: number;
     reviewCount: number;
     ratingAverage: number;
+    ownerAvatarUrl?: string;
 }
