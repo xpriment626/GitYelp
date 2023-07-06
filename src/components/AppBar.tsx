@@ -1,4 +1,5 @@
-import { StyleSheet, View, Text } from "react-native"
+import { StyleSheet, View, TouchableOpacity } from "react-native"
+import Icon from "react-native-vector-icons/MaterialCommunityIcons"
 
 // interface IAppBar {
 
@@ -7,9 +8,15 @@ import { StyleSheet, View, Text } from "react-native"
 const AppBar = () => {
     return (
         <View style={styles.container}>
-            <Text style={styles.typo}>Black</Text>
-            <Text style={styles.typo}>Knee</Text>
-            <Text style={styles.typo}>Girl</Text>
+            <TouchableOpacity>
+                <Icon name="github" size={30} style={styles.icon} />
+            </TouchableOpacity>
+            <TouchableOpacity>
+                <Icon name="pen" size={30} style={styles.icon} />
+            </TouchableOpacity>
+            <TouchableOpacity>
+                <Icon name="logout" size={30} style={styles.icon} />
+            </TouchableOpacity>
         </View>
     )
 }
@@ -22,14 +29,15 @@ const styles = StyleSheet.create({
         left: 0,
         right: 0,
         flexDirection: "row",
-        justifyContent: "space-between",
+        justifyContent: "space-around",
         paddingTop: 25,
         paddingRight: 50,
         paddingBottom: 50,
         paddingLeft: 50,
     },
-    typo: {
+    icon: {
         color: "rgb(110, 202, 245)",
+        marginTop: 10,
         marginBottom: 10
     }
 })
