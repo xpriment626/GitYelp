@@ -9,13 +9,13 @@ const AppBar = () => {
     return (
         <View style={styles.container}>
             <TouchableOpacity>
-                <Icon name="github" size={30} style={styles.icon} />
+                <Icon name="github" size={40} style={styles.icon} />
             </TouchableOpacity>
             <TouchableOpacity>
-                <Icon name="pen" size={30} style={styles.icon} />
+                <Icon name="pen" size={40} style={styles.icon} />
             </TouchableOpacity>
             <TouchableOpacity>
-                <Icon name="logout" size={30} style={styles.icon} />
+                <Icon name="logout" size={40} style={styles.icon} />
             </TouchableOpacity>
         </View>
     )
@@ -23,7 +23,7 @@ const AppBar = () => {
 
 const styles = StyleSheet.create({
     container: {
-        backgroundColor: "rgb(9, 10, 14)",
+        backgroundColor: "rgba(18, 20, 28, 0.98)",
         position: "absolute",
         bottom: 0,
         left: 0,
@@ -38,7 +38,6 @@ const styles = StyleSheet.create({
     icon: {
         color: "rgb(110, 202, 245)",
         marginTop: 10,
-        marginBottom: 10
     }
 })
 
