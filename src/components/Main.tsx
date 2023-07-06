@@ -1,10 +1,12 @@
 import { SafeAreaView, StyleSheet } from "react-native"
 import RepoList from "./RepoList";
+import AppBar from "./AppBar";
 
 const Main = () => {
     return (
         <SafeAreaView style={styles.container}>
             <RepoList />
+            <AppBar />
         </SafeAreaView>
     )
 }
